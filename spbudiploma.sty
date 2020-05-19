@@ -42,6 +42,14 @@
     \addcontentsline{toc}{section}{#1}
 }
 
+\newcommand{\specialsubsection}[1]{
+    \phantomsection
+    \bigskip\smallskip\hspace{-12.5mm}
+    \normalfont\fontsize{16}{16}\textbf{#1}\bfseries
+    \par\bigskip\normalfont\normalsize
+    \addcontentsline{toc}{subsection}{#1}
+}
+
 % Размеры заголовков разделов и подразделов
 \usepackage{titlesec}
 % Раздел: 18pt, добавляем слово "Глава"
